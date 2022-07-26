@@ -2,6 +2,7 @@ from flask import jsonify, request
 from flask_restful import Resource,reqparse
 from flask_jwt_extended import get_jwt_identity, jwt_required
 from models.item import ItemModel
+import hmac
 
 
 class Item(Resource):
